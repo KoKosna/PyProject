@@ -1,14 +1,18 @@
 import math
-num = []
-natural, full, rational, vesh, compleks, odd, even, ez = [], [], [], [], [], [], [], []
+
+natural, full, rational, vesh, trash, odd, even, ez = [], [], [], [], [], [], [], []
 num = input()
 num = num.split(",")
 print(num[:])
-for x in num:
-    if x.isdigit() == 1:
-        if x.find("sqrt") == 0:
-            if math.sqrt(x) == float():
-                
+for i in num:
+    if isfinite(i) == 0:
+        if i.find("sqrt") == 0 or i == "pi" or i == "e":
+            vesh.append(i)
+    else:
+        print(float(i))
+       # if i >= 0 and i-int(i) == 0:
+
+
 
 
 
