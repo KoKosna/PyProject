@@ -16,37 +16,39 @@ def gnome_sort(arr):
             arr[i], arr[i - 1] = arr[i - 1], arr[i]
             i -= 1
     return arr
-def bucket_sort(array, bucketSize=10):
-  if len(array) == 0:
-    return array
 
-  # Determine minimum and maximum values
-  minValue = array[0]
-  maxValue = array[0]
-  for i in range(1, len(array)):
-    if array[i] < minValue:
-      minValue = array[i]
-    elif array[i] > maxValue:
-      maxValue = array[i]
 
-  # Initialize buckets
-  bucketCount = math.floor((maxValue - minValue) / bucketSize) + 1
-  buckets = []
-  for i in range(0, bucketCount):
-    buckets.append([])
+def bucket_sort(alist):
+    largest = max(alist)
+    length = len(alist)
+    size = largest / length
 
-  # Distribute input array values into buckets
-  for i in range(0, len(array)):
-    buckets[math.floor((array[i] - minValue) / bucketSize)].append(array[i])
+    buckets = [[] for _ in range(length)]
+    for i in range(length):
+        j = int(alist[i] / size)
+        if j != length:
+            buckets[j].append(alist[i])
+        else:
+            buckets[length - 1].append(alist[i])
 
-  # Sort buckets and place back into input array
-  array = []
-  for i in range(0, len(buckets)):
-    insertion_bucket_sort.bucket_sort(buckets[i])
-    for j in range(0, len(buckets[i])):
-      array.append(buckets[i][j])
+    for i in range(length):
+        insertion_sort(buckets[i])
 
-  return array
+    result = []
+    for i in range(length):
+        result = result + buckets[i]
+
+    return result
+def insertion_sort(alist):
+    for i in range(1, len(alist)):
+        temp = alist[i]
+        j = i - 1
+        while (j >= 0 and temp < alist[j]):
+            alist[j + 1] = alist[j]
+            j = j - 1
+        alist[j + 1] = temp
+
+
 def heap_sort (arr):
     def sift_down (parent, limit):
         item = arr[parent]
@@ -81,7 +83,7 @@ if ans == '1':
 elif ans == '2':
     gnome_sort(li)
 elif ans == '3':
-    bucket_sort(li)
+    li=bucket_sort(li)
 elif ans == '4':
     heap_sort(li)
 print(li[:])
