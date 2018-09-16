@@ -7,6 +7,7 @@ def puz_sort(arr):
                 li[i], li[i + 1] = li[i + 1], li[i]
         n += 1
     return arr
+
 def gnome_sort(arr):
     i = 1
     while i < len(arr):
@@ -17,37 +18,32 @@ def gnome_sort(arr):
             i -= 1
     return arr
 
-
-def bucket_sort(alist):
-    largest = max(alist)
-    length = len(alist)
+def bucket_sort(arr):
+    largest = max(arr)
+    length = len(arr)
     size = largest / length
-
     buckets = [[] for _ in range(length)]
     for i in range(length):
-        j = int(alist[i] / size)
+        j = int(arr[i] / size)
         if j != length:
-            buckets[j].append(alist[i])
+            buckets[j].append(arr[i])
         else:
-            buckets[length - 1].append(alist[i])
-
+            buckets[length - 1].append(arr[i])
     for i in range(length):
         insertion_sort(buckets[i])
-
     result = []
     for i in range(length):
         result = result + buckets[i]
-
     return result
-def insertion_sort(alist):
-    for i in range(1, len(alist)):
-        temp = alist[i]
-        j = i - 1
-        while (j >= 0 and temp < alist[j]):
-            alist[j + 1] = alist[j]
-            j = j - 1
-        alist[j + 1] = temp
 
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        temp = arr[i]
+        j = i - 1
+        while (j >= 0 and temp < arr[j]):
+            arr[j + 1] = arr[j]
+            j = j - 1
+        arr[j + 1] = temp
 
 def heap_sort (arr):
     def sift_down (parent, limit):
@@ -56,9 +52,9 @@ def heap_sort (arr):
             child = (parent << 1) + 1
             if child >= limit:
                 break
-            if child + 1 < limit and arr[child] < arr[child + 1]: # !
+            if child + 1 < limit and arr[child] < arr[child + 1]:
                 child += 1
-            if item < arr[child]:                                      # !
+            if item < arr[child]:
                 arr[parent] = arr[child]
                 parent = child
             else:
