@@ -1,5 +1,4 @@
 def puz_sort(arr):
-    # li = [5,2,7,4,0,9,8,6]
     n = 1
     while n < len(li):
         for i in range(len(li) - n):
