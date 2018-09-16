@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="193c40d0-5d31-43b4-9e87-9ad5c338958e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,14 +54,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Python Console" value="329" />
           <entry key="dummy" value="2" />
-          <entry key="py" value="1552" />
+          <entry key="py" value="3577" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="1552" />
+          <entry key="Python" value="3906" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -73,6 +75,7 @@
           <entry key="Python" value="2" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FavoritesManager">
@@ -92,17 +95,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="155">
+              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1537122892412" expanded="true" signature="115:117" ph="..." />
+                <marker date="1537122892412" expanded="true" signature="143:1885" ph="..." />
+                <marker date="1537122892412" expanded="true" signature="1005:1364" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,7 +140,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="142" />
     <option name="y" value="8" />
-    <option name="width" value="1400" />
+    <option name="width" value="1397" />
     <option name="height" value="812" />
   </component>
   <component name="ProjectView">
@@ -300,10 +300,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="8" width="1400" height="812" extended-state="0" />
+    <frame x="142" y="8" width="1397" height="812" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5011547" side_tool="true" weight="0.24981523" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49884528" visible="true" weight="0.24981523" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49884528" visible="true" weight="0.25037038" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32868218" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -311,7 +312,7 @@
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32868218" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.32868218" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -342,8 +343,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="155">
+          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1537122892412" expanded="true" signature="115:117" ph="..." />
+            <marker date="1537122892412" expanded="true" signature="143:1885" ph="..." />
+            <marker date="1537122892412" expanded="true" signature="1005:1364" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
